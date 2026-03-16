@@ -3,7 +3,9 @@
 import { motion } from 'framer-motion';
 import { BarChart3, Users, Settings } from 'lucide-react';
 
-export default function ManagementSection() {
+interface ManagementSectionProps {}
+
+export default function ManagementSection({}: ManagementSectionProps) {
   return (
     <motion.section
       initial={{ opacity: 0, y: 20 }}

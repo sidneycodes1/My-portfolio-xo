@@ -2,7 +2,9 @@
 
 import { motion } from 'framer-motion';
 
-export default function SocialsSection() {
+interface SocialsSectionProps {}
+
+export default function SocialsSection({}: SocialsSectionProps) {
   return (
     <motion.section
       initial={{ opacity: 0, y: 20 }}

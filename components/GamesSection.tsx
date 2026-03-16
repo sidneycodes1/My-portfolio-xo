@@ -4,7 +4,9 @@ import { motion } from 'framer-motion';
 import { GAMES } from '@/constants';
 import { Gamepad2 } from 'lucide-react';
 
-export default function GamesSection() {
+interface GamesSectionProps {}
+
+export default function GamesSection({}: GamesSectionProps) {
   return (
     <motion.section
       initial={{ opacity: 0, y: 20 }}

@@ -4,7 +4,9 @@ import { motion } from 'framer-motion';
 import { PROFILE } from '@/constants';
 import Image from 'next/image';
 
-export default function AboutSection() {
+interface AboutSectionProps {}
+
+export default function AboutSection({}: AboutSectionProps) {
   return (
     <motion.section
       initial={{ opacity: 0, scale: 0.95 }}

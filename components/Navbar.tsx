@@ -2,13 +2,15 @@
 
 const navLinks = ['About', 'Games', 'Socials', 'Management'];
 
+interface NavbarProps {
+  activeSection: string;
+  setActiveSection: (section: string) => void;
+}
+
 export default function Navbar({ 
   activeSection, 
   setActiveSection 
-}: { 
-  activeSection: string; 
-  setActiveSection: (section: string) => void 
-}) {
+}: NavbarProps) {
   return (
     <div className="fixed top-0 left-0 w-full z-50">
       <nav className="w-full flex justify-center pt-6 px-3">
